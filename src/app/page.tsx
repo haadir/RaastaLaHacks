@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import { TextGenerateEffect } from './components/text-generate'
+import { TextGenerateEffect } from './components/text-generate.client'
 import { LinearGradient } from 'react-text-gradients';
 import Link from 'next/link';
 
