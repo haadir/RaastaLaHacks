@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import Image from "next/image";
 import { TextGenerateEffect } from './components/text-generate'
 import { LinearGradient } from 'react-text-gradients';
