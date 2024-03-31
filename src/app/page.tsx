@@ -1,9 +1,6 @@
+import React, { Component }  from 'react';
 import Image from "next/image";
-import Navbar from "./components/navigation";
-import Typewriter from 'typewriter-effect';
-import { TracingBeam } from './components/trace-beam';
 import { TextGenerateEffect } from './components/text-generate'
-import { WavyBackground } from "./components/wavy-background";
 import { LinearGradient } from 'react-text-gradients';
 import Link from 'next/link';
 
