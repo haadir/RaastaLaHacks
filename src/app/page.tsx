@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import { TextGenerateEffect } from './components/text-generate.client'
+// import { TextGenerateEffect } from './components/text-generate.client'
 import { LinearGradient } from 'react-text-gradients';
 import Link from 'next/link';
 
@@ -10,7 +10,8 @@ const IndexPage = () => {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24">
         <div className="flex justify-center items-start">
           <div className="flex flex-col justify-center items-start text-left px-6 mr-6">
-            <TextGenerateEffect words="Haadi Razzak" className="name text-5xl mb-4" />
+            {/* <TextGenerateEffect words="Haadi Razzak" className="name text-5xl mb-4" /> */}
+            <h1 className="name text-5xl mb-4">Haadi Razzak</h1>
             <p className="description text-lg mb-6 max-w-lg">
               Advanced <LinearGradient gradient={['to left', '#ee5a24 ,#ee2027']}>
                software engineer
