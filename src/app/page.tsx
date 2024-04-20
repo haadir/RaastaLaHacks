@@ -2,12 +2,11 @@
 
 import React from 'react';
 import Image from "next/image";
-// import { TextGenerateEffect } from './components/text-generate.client'
 import { LinearGradient } from 'react-text-gradients';
 import Navbar from './components/navbar';
-import { TextGenerateEffect } from ".//components/text-generate-effect";
+import { TextGenerateEffect } from "./components/text-generate-effect";
 
-const IndexPage = () => {
+const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -15,9 +14,9 @@ const IndexPage = () => {
         <div className="flex justify-center items-start">
           <div className="flex flex-col justify-center items-start text-left px-6 mr-6">
             <h1 className="text-6xl font-bold mb-8">
-            <div className='text-white'>
-              <TextGenerateEffect words={"Raasta"} />
-            </div>
+              <div className='text-white'>
+                <TextGenerateEffect words={"Raasta"} />
+              </div>
             </h1>
             <p className="description text-lg mb-6 max-w-lg">
               Using <LinearGradient gradient={['to left', '#17acff ,#ff68f0']}> AI agents </LinearGradient> to build
@@ -61,4 +60,4 @@ const IndexPage = () => {
   );
 }
 
-export default IndexPage;
+export default HomePage;
