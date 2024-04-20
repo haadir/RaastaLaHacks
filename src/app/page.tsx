@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 
 const IndexPage = () => {
   return (
+    
     <div className="flex flex-col min-h-screen">
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-48">
         <div className="flex justify-center items-start">
