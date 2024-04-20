@@ -1,20 +1,24 @@
+'use client';
+
 import React from 'react';
 import Image from "next/image";
 // import { TextGenerateEffect } from './components/text-generate.client'
 import { LinearGradient } from 'react-text-gradients';
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-
+import Navbar from './components/navbar';
+import { TextGenerateEffect } from ".//components/text-generate-effect";
 
 const IndexPage = () => {
   return (
-    
     <div className="flex flex-col min-h-screen">
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-48">
+      <Navbar />
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-40">
         <div className="flex justify-center items-start">
           <div className="flex flex-col justify-center items-start text-left px-6 mr-6">
-            {/* <TextGenerateEffect words="Raasta" className="name text-5xl mb-4" /> */}
-            <h1 className="name big-text mb-4">Raasta</h1>
+            <h1 className="text-6xl font-bold mb-8">
+            <div className='text-white'>
+              <TextGenerateEffect words={"Raasta"} />
+            </div>
+            </h1>
             <p className="description text-lg mb-6 max-w-lg">
               Using <LinearGradient gradient={['to left', '#17acff ,#ff68f0']}> AI agents </LinearGradient> to build
               <br/> an optimal navigation route based off <LinearGradient gradient={['to left', '#17acff ,#ff68f0']}> your preferences. </LinearGradient>
@@ -35,9 +39,23 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="flex items-start justify-center mt-8">
+        <div className="text-white text-center py-10 pt-40">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-3 gap-4">
+          <div>
+            <span className="text-5xl font-bold">10</span>
+            <p className="text-xl">AI Agents</p>
+          </div>
+          <div>
+            <span className="text-5xl font-bold">100+</span>
+            <p className="text-xl">Citiies</p>
+          </div>
+          <div>
+            <span className="text-5xl font-bold">1000+</span>
+            <p className="text-xl">Preferences</p>
+          </div>
+  </div>
+</div>
 
-        </div>
       </main>
     </div>
   );
